@@ -1,10 +1,9 @@
 {
-  "name": "heroui-native-example",
+  "name": "naency-app",
   "version": "v1.0.0-alpha.13",
   "main": "expo-router/entry",
   "scripts": {
-    "start": "expo start -c",
-    "reset-project": "node ./scripts/reset-project.js",
+    "dev": "expo start -c",
     "android": "expo start --android -c",
     "ios": "expo start --ios -c",
     "web": "expo start --web -c",

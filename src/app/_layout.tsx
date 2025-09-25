@@ -5,7 +5,7 @@ import {
   Inter_700Bold,
   useFonts,
 } from '@expo-google-fonts/inter';
-import { Slot } from 'expo-router';
+import { Stack } from 'expo-router';
 import { HeroUINativeProvider } from 'heroui-native';
 import { StyleSheet } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
@@ -35,7 +35,12 @@ function ThemedLayout() {
         },
       }}
     >
-      <Slot />
+      <Stack screenOptions={{ headerShown: false }} >
+        <Stack.Screen
+          name="(public)/login"
+          options={{ headerShown: false }}
+        />
+      </Stack>
     </HeroUINativeProvider>
   );
 }

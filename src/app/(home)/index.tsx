@@ -1,5 +1,5 @@
 import Feather from '@expo/vector-icons/Feather';
-import { useRouter } from 'expo-router';
+import { Link, RelativePathString, useRouter } from 'expo-router';
 import { Card, Chip, useTheme } from 'heroui-native';
 import type { FC } from 'react';
 import { Image, Pressable, View } from 'react-native';
@@ -89,7 +89,7 @@ const HomeCard: FC<HomeCardProps & { index: number }> = ({
       entering={FadeInDown.duration(300)
         .delay(index * 100)
         .easing(Easing.out(Easing.ease))}
-      onPress={() => router.push(path)}
+      onPress={() => router.push(path as RelativePathString)}
     >
       <Card className="p-0 rounded-xl">
         <AnimatedView
@@ -164,6 +164,8 @@ export default function App() {
           />
         ))}
       </View>
+
+      <Link href={'/(public)/login'} className='text-red-400'> Login </Link>
     </ScreenScrollView>
   );
 }

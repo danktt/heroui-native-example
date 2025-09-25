@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "HeroUI Native Example",
-    "slug": "heroui-native-example",
+    "name": "Naency App",
+    "slug": "naency-app",
     "version": "v1.0.0-alpha.13",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "heroui-native-example",
+    "scheme": "naency-app",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

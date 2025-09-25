@@ -53,6 +53,7 @@ export default function Layout() {
         },
       }}
     >
+
       <Stack.Screen
         name="index"
         options={{ headerShown: true, headerTitle: _renderTitle }}
